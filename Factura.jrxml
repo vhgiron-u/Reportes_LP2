@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1a55db23-c740-4ee3-b78c-67d291ea7405">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="PanaderiaLP2"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="583"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="403"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="343"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="646"/>
+	<parameter name="_idPedidoProductos" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[call OBTENER_FACTURA($P{_idPedidoProductos});]]>
+	</queryString>
+	<field name="idDocumentoPago" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="idDocumentoPago"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="DocumentoPago"/>
+	</field>
+	<field name="Total" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="Total"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="DocumentoPago"/>
+	</field>
+	<field name="Registrada" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="Registrada"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="DocumentoPago"/>
+	</field>
+	<field name="Cliente_idCliente" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Cliente_idCliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="DocumentoPago"/>
+	</field>
+	<field name="PedidoProductos_idPedidoProductos" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="PedidoProductos_idPedidoProductos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="DocumentoPago"/>
+	</field>
+	<field name="DocumentoPago_idDocumentoPago" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="DocumentoPago_idDocumentoPago"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Factura"/>
+	</field>
+	<field name="RUC" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="RUC"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Factura"/>
+	</field>
+	<field name="IGV_Factura" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="IGV_Factura"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Factura"/>
+	</field>
+	<field name="RazonSocial" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="RazonSocial"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Factura"/>
+	</field>
+	<field name="idPedidoProductos" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="idPedidoProductos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="PedidoProductos"/>
+	</field>
+	<field name="FechaRegistro" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="FechaRegistro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="PedidoProductos"/>
+	</field>
+	<field name="FechaEntrega" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="FechaEntrega"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="PedidoProductos"/>
+	</field>
+	<field name="COLUMN_13" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="DocumentoPago_idDocumentoPago"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="PedidoProductos"/>
+	</field>
+	<field name="CuentaUsuario_idCuentaUsuario" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="CuentaUsuario_idCuentaUsuario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="PedidoProductos"/>
+	</field>
+	<field name="EstadoPedido_idEstadoPedido" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="EstadoPedido_idEstadoPedido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="PedidoProductos"/>
+	</field>
+	<field name="COLUMN_16" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Cliente_idCliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="PedidoProductos"/>
+	</field>
+	<field name="Delivery" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="Delivery"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="PedidoProductos"/>
+	</field>
+	<field name="idCliente" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="idCliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Cliente"/>
+	</field>
+	<field name="telefono" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="telefono"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Cliente"/>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="direccion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Cliente"/>
+	</field>
+	<field name="CuentaBancaria" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CuentaBancaria"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Cliente"/>
+	</field>
+	<field name="Panaderia_idPanaderia" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Panaderia_idPanaderia"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Cliente"/>
+	</field>
+	<field name="correo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="correo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Cliente"/>
+	</field>
+	<field name="tipo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tipo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Cliente"/>
+	</field>
+	<field name="COLUMN_25" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Cliente_idCliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Empresa"/>
+	</field>
+	<field name="COLUMN_26" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="RUC"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Empresa"/>
+	</field>
+	<field name="COLUMN_27" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="RazonSocial"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Empresa"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="125" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<rectangle radius="14">
+				<reportElement x="340" y="10" width="208" height="90" uuid="da4a09fa-bfcd-4414-bb9a-0da0e017e8de"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<textField pattern="#0000000.###;(#0000000.###-)">
+				<reportElement x="410" y="67" width="94" height="23" uuid="63c282f8-d7a2-4110-90c9-d5078da00cb8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e389cfa-c5e9-4da5-8dbc-0ab221d023d0"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idDocumentoPago}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="20" y="20" width="230" height="70" uuid="727a7974-f0c6-4788-a2ca-68142f56f6b6"/>
+				<imageExpression><![CDATA["src/Imagenes/rovegnoVeryLarge.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="370" y="20" width="60" height="23" uuid="68e82aaa-542a-48ad-b8ce-373c794d9a69"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RUC:]]></text>
+			</staticText>
+			<textField pattern="#0000000.###;(#0000000.###-)">
+				<reportElement x="430" y="20" width="96" height="24" uuid="b9b83708-bad0-4395-a2ff-e97232b7121f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e389cfa-c5e9-4da5-8dbc-0ab221d023d0"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["20101973094"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="400" y="44" width="94" height="23" uuid="8bb81916-c336-4988-bedc-1d8d1f37ed7d"/>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Factura N°]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="110" splitType="Stretch">
+			<staticText>
+				<reportElement x="17" y="15" width="93" height="30" uuid="b91738d8-5b4c-440f-a005-2b3c8e565e7d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ba222e1-53a4-484a-bba8-3a4ed70d8fc3"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Razón Social:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="15" width="230" height="30" uuid="e2d84aa5-f6b6-4564-82cf-e6f06d3f8b9b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3ba222e1-53a4-484a-bba8-3a4ed70d8fc3"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RazonSocial}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="17" y="45" width="63" height="30" uuid="2b2d1097-738e-43a7-8236-a9673d5bd222">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="63c9dbed-0add-421b-bb9e-6050af7b2349"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RUC]]></text>
+			</staticText>
+			<textField pattern="#00000000000.###;(#00000000000.###-)">
+				<reportElement x="110" y="45" width="110" height="30" uuid="2c257627-00c7-4df7-a988-37bb11bdc708">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="63c9dbed-0add-421b-bb9e-6050af7b2349"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RUC}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="340" y="45" width="113" height="30" uuid="bd2db5cd-225b-413f-9556-d80bbfc5cb53">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2927fc4-0d13-403d-98c6-4fb2a0f8107b"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de Entrega:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="460" y="45" width="89" height="30" uuid="00adf114-63ea-4ab0-9042-b9540088df3d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2927fc4-0d13-403d-98c6-4fb2a0f8107b"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FechaEntrega}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="80" width="230" height="30" uuid="13b19801-b304-4e79-a852-8ee796f8edcb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9617921d-d749-4cec-b2f8-95399b08d931"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="17" y="76" width="63" height="30" uuid="c1c7066f-c4c0-4646-84c5-8a99447138c3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9617921d-d749-4cec-b2f8-95399b08d931"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección:]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="94" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="570" height="60" uuid="72867733-7e1b-4b16-a77d-414780ccdab7"/>
+				<subreportParameter name="Pedido_ID">
+					<subreportParameterExpression><![CDATA[$F{idPedidoProductos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["DetailsReport.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<rectangle radius="14">
+				<reportElement x="400" y="0" width="144" height="40" uuid="9a5aeddf-394e-4e01-9f1d-124c9751951c"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="14">
+				<reportElement x="218" y="0" width="134" height="40" uuid="74a861b8-520a-4056-b477-e51f2a96b69a"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="453" y="10" width="83" height="20" uuid="2811ebf9-6120-418a-a55e-fe6df6b119bb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f85d2df7-44a1-4751-916b-2ce7f82390b5"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="410" y="10" width="40" height="20" uuid="206a95d7-fa9b-481b-b9cb-9179c08c8eb5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f85d2df7-44a1-4751-916b-2ce7f82390b5"/>
+				</reportElement>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="10" width="53" height="20" uuid="fa972b7a-0526-45a3-af4a-d6f1b0a89773">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="710d48d9-5c08-4077-89fa-ca472b662c25"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IGV_Factura} + "%"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="230" y="10" width="40" height="20" uuid="9e7d0406-6d8c-4e67-a28e-339a4b5de531">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="710d48d9-5c08-4077-89fa-ca472b662c25"/>
+				</reportElement>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IGV]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
